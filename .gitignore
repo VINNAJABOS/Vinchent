@@ -1,0 +1,32 @@
+# Secrets (WiFi password, legacy DB secret, API keys)
+/meterrr/
+/js/gemini-config.js
+.env
+.env.*
+*.pem
+*.key
+serviceAccount*.json
+*-adminsdk-*.json
+secrets.h
+
+# Firebase local cache
+.firebase/
+
+# Dependencies
+node_modules/
+
+# Heavy source files (3D renders, Blender scripts)
+/3D/
+/blender/
+
+# Scratch / generated
+coba.py
+ChatGPT Image*.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log

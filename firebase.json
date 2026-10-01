@@ -1,0 +1,37 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "meterrr/**",
+      "blender/**",
+      "3D/**",
+      "coba.py",
+      "README.md",
+      "PROMPT-LOGO-PUSHMETTER.md",
+      "database.rules.json",
+      "firestore.rules",
+      "firestore.indexes.json"
+    ],
+    "cleanUrls": true,
+    "headers": [
+      {
+        "source": "**/*.@(glb|png|jpg|jpeg)",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }]
+      },
+      {
+        "source": "**/*.@(js|css)",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+      }
+    ]
+  }
+}
